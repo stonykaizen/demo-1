@@ -1,4 +1,4 @@
-import type{ ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface MyComponentProps {
   title: string;
@@ -7,13 +7,9 @@ interface MyComponentProps {
 
 const MyComponent: React.FC<MyComponentProps> = ({ title, children }) => {
   return (
-    <div className="my-component">
-      <h2>{title}</h2>
-      <div className="content">
-        {children} {/* Aquí renderizamos los children */}
-        <p>Holaa</p>
-      </div>
-    </div>
+    <button className="flex justify-center items-center gap-2.5 p-2.5 p-2 w-[8.75rem] bg-[#2f40a0] text-white font-['Inter'] font-medium leading-6">
+ {children}
+</button>
   );
 };
 
